@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projetoAngular';
+  produtos: any[] = [];
+
+  incluir($event: any) {
+    console.log($event)
+    const produto = {...$event, data: new Date()};
+    this.produtos.push(produto);
+
+  }
+
+
+
 }

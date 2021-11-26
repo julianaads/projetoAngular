@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <th>Produto</th>
+    <th>Descrição</th>
+    <th>Valor</th>
+    <th>Data</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produto of produtos">
+      <td>{{produto.produto}}</td>
+      <td>{{produto.descricao}}</td>
+      <td>{{produto.valor | currency}}</td>
+      <td>{{produto.data | date: "short"}}</td>
+
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- no for tenho um produto dentro de uma coleção de produtos -->
+
+
