@@ -1,20 +1,23 @@
-<table>
-  <thead>
-    <th>Produto</th>
-    <th>Descrição</th>
-    <th>Valor</th>
-    <th>Data</th>
+ <table class="tabela">
+  <thead class="tabela__cabecalho">
+    <th class="tabela__cabecalho__conteudo">Produto</th>
+    <th class="tabela__cabecalho__conteudo">Descrição</th>
+    <th class="tabela__cabecalho__conteudo">Valor</th>
+    <th class="tabela__cabecalho__conteudo">Data</th>
   </thead>
-  <tbody>
-    <tr *ngFor="let produto of produtos">
-      <td>{{produto.produto}}</td>
-      <td>{{produto.descricao}}</td>
-      <td>{{produto.valor | currency}}</td>
-      <td>{{produto.data | date: "short"}}</td>
+  <tbody *ngIf="!!produtos?.length; else listaVazia">
+    <tr class="tabela__linha" *ngFor="let produto of produtos">
+      <td class="tabela__conteudo">{{produto.produto}}</td>
+      <td class="tabela__conteudo">{{produto.descricao}}</td>
+      <td class="tabela__conteudo">{{produto.valor | currency}}</td>
+      <td class="tabela__conteudo">{{produto.data | date: "short"}}</td>
 
     </tr>
   </tbody>
 </table>
+<ng-template #listaVazia>
+  <p>Nenhum produto cadastrado</p>
+</ng-template>
 
 
 <!-- no for tenho um produto dentro de uma coleção de produtos -->

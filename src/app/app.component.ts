@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProdutoService } from './services/produto.service';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projetoAngular';
-  produtos: any[] = [];
+
+  constructor(private service: ProdutoService) {
+
+  }
 
   incluir($event: any) {
-    console.log($event)
-    const produto = {...$event, data: new Date()};
-    this.produtos.push(produto);
+    this.service.adicionar($event);
 
   }
 
