@@ -1,0 +1,39 @@
+{
+  "transferencias": [
+    {
+      "id": "1",
+      "produto": "Cropped" ,
+      "descrição": "Tricô",
+      "valor": 35,
+      "data": "2020-11-04T16:30:10.710Z"
+    },
+    {
+      "id": "2",
+      "produto": "Saia",
+      "descrição": "Longa",
+      "valor": 40,
+      "data": "2020-11-04T21:24:10.710Z"
+    },
+    {
+      "id": "3",
+      "produto": "Maxi Blazer",
+      "descrição": "",
+      "valor": 110.5,
+      "data": "2020-11-05T21:14:10.710Z"
+    },
+    {
+      "id": "4",
+      "produto": "Short",
+      "descrição": "Jenas",
+      "valor": 49.90,
+      "data": "2020-11-05T21:14:10.710Z"
+    },
+    {
+      "id": "5",
+      "produto": "Vestido",
+      "descrição": "Midi",
+      "valor": 85.90,
+      "data": "2020-11-05T21:14:10.710Z"
+    }
+  ]
+}

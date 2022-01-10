@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Transferencia } from '../models/transferencia.models';
 import { ProdutoService } from '../services/produto.service';
 
 @Component({
@@ -13,7 +14,10 @@ export class ListarProdutosComponent implements OnInit {
   constructor(private service: ProdutoService) { }
 
   ngOnInit(): void {
-    this.produtos = this.service.produtos;
+    this.service.todas().subscribe((produtos: Transferencia[]) => {
+      console.table(produtos);
+      this.produtos = produtos;
+    })
   }
 
 }

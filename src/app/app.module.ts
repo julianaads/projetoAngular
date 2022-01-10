@@ -8,6 +8,7 @@ import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
 import { ListarProdutosComponent } from './listar-produtos/listar-produtos.component';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { HttpClientModule } from '@angular/common/http';
 
 registerLocaleData(localePt, 'pt');
 
@@ -20,6 +21,7 @@ registerLocaleData(localePt, 'pt');
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'pt' },
