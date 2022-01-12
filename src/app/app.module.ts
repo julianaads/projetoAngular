@@ -9,6 +9,7 @@ import { ListarProdutosComponent } from './listar-produtos/listar-produtos.compo
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing-modules';
 
 registerLocaleData(localePt, 'pt');
 
@@ -22,6 +23,7 @@ registerLocaleData(localePt, 'pt');
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'pt' },

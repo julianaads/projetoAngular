@@ -1,5 +1,6 @@
 import { Component, Output } from "@angular/core";
 import { EventEmitter } from "@angular/core";
+import { Router } from "@angular/router";
 import { Transferencia } from "../models/transferencia.models";
 import { ProdutoService } from "../services/produto.service";
 
@@ -17,7 +18,7 @@ export class NovoProdutoComponent{
   produto: string = "";
   descricao: string = "";
 
-  constructor(private service: ProdutoService) {}
+  constructor(private service: ProdutoService, private router: Router) {}
 
   transferir() {
     console.log('inserir novo produto');
@@ -25,8 +26,9 @@ export class NovoProdutoComponent{
     const incluirProduto: Transferencia = {valor: this.valor, produto: this.produto, descricao: this.descricao}
 
     this.service.adicionar(incluirProduto).subscribe(resultado => {
-      console.log(resultado)
-      this.limparCampos
+      console.log(resultado);
+      this.limparCampos();
+      this.router.navigateByUrl("listarProdutos");
     },
     (error) => console.log(error)
     )
