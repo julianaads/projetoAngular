@@ -1,7 +1,7 @@
 export interface Transferencia {
-  id?: string
+  id?: number | string;
   produto: string
-  descrição: string
+  descricao: number | string;
   valor: number
   data?: string
 }

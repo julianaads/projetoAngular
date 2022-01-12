@@ -13,11 +13,4 @@ export class AppComponent {
 
   }
 
-  incluir($event: any) {
-    this.service.adicionar($event);
-
-  }
-
-
-
 }

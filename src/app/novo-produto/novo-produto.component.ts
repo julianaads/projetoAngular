@@ -1,5 +1,7 @@
 import { Component, Output } from "@angular/core";
 import { EventEmitter } from "@angular/core";
+import { Transferencia } from "../models/transferencia.models";
+import { ProdutoService } from "../services/produto.service";
 
 @Component({
     selector:'app-novo-produto',
@@ -15,12 +17,19 @@ export class NovoProdutoComponent{
   produto: string = "";
   descricao: string = "";
 
+  constructor(private service: ProdutoService) {}
+
   transferir() {
     console.log('inserir novo produto');
-    const incluirProduto = {valor: this.valor, produto: this.produto, descricao: this.descricao}
-    this.aoIncluir.emit(incluirProduto);
-    this.limparCampos();
 
+    const incluirProduto: Transferencia = {valor: this.valor, produto: this.produto, descricao: this.descricao}
+
+    this.service.adicionar(incluirProduto).subscribe(resultado => {
+      console.log(resultado)
+      this.limparCampos
+    },
+    (error) => console.log(error)
+    )
   }
 
   limparCampos() {

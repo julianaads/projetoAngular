@@ -2,38 +2,94 @@
   "transferencias": [
     {
       "id": "1",
-      "produto": "Cropped" ,
-      "descrição": "Tricô",
+      "produto": "Cropped",
+      "descricao": "Tricô",
       "valor": 35,
       "data": "2020-11-04T16:30:10.710Z"
     },
     {
       "id": "2",
       "produto": "Saia",
-      "descrição": "Longa",
+      "descricao": "Longa",
       "valor": 40,
       "data": "2020-11-04T21:24:10.710Z"
     },
     {
       "id": "3",
       "produto": "Maxi Blazer",
-      "descrição": "",
+      "descricao": "",
       "valor": 110.5,
       "data": "2020-11-05T21:14:10.710Z"
     },
     {
       "id": "4",
       "produto": "Short",
-      "descrição": "Jenas",
-      "valor": 49.90,
+      "descricao": "Jenas",
+      "valor": 49.9,
       "data": "2020-11-05T21:14:10.710Z"
     },
     {
       "id": "5",
       "produto": "Vestido",
-      "descrição": "Midi",
-      "valor": 85.90,
+      "descricao": "Midi",
+      "valor": 85.9,
       "data": "2020-11-05T21:14:10.710Z"
+    },
+    {
+      "valor": "45,20",
+      "produto": "saia",
+      "descricao": "cobrinha",
+      "data": "2022-01-12T02:18:48.498Z",
+      "id": "7w6r-1h"
+    },
+    {
+      "valor": "45,20",
+      "produto": "saia",
+      "descricao": "cobrinha",
+      "data": "2022-01-12T02:18:51.183Z",
+      "id": "CIxmUdm"
+    },
+    {
+      "valor": "1000",
+      "produto": "calça",
+      "descricao": "ginantica",
+      "data": "2022-01-12T02:20:49.526Z",
+      "id": "Nba9c-_"
+    },
+    {
+      "valor": "15,50",
+      "produto": "camiseta",
+      "descricao": "oversize",
+      "data": "2022-01-12T02:21:32.619Z",
+      "id": "V_2hzNN"
+    },
+    {
+      "valor": 0,
+      "produto": "",
+      "descricao": "",
+      "data": "2022-01-12T02:21:53.513Z",
+      "id": "iSR9Q1V"
+    },
+    {
+      "valor": 0,
+      "produto": "",
+      "descricao": "",
+      "data": "2022-01-12T02:21:56.540Z",
+      "id": "j8gNmXK"
+    },
+    {
+      "valor": "10.50",
+      "produto": "dgfgfffff",
+      "descricao": "ffff",
+      "data": "2022-01-12T02:22:23.052Z",
+      "id": "34Uf6ff"
+    },
+    {
+      "valor": 0,
+      "produto": "",
+      "descricao": "",
+      "data": "2022-01-12T02:22:30.041Z",
+      "id": "fklBjh0"
     }
   ]
 }

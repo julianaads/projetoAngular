@@ -24,9 +24,11 @@ constructor(private httpClient: HttpClient) {
    return this.httpClient.get<Transferencia[]>(this.url);
  }
 
- adicionar(produto: any) {
+ adicionar(produto: Transferencia): Observable<Transferencia> {
   this.hidratar(produto)
   this.produtos.push(produto);
+
+  return this.httpClient.post<Transferencia>(this.url, produto)
 
 }
 
